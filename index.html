@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce Café Raíces: café colombiano, desayunos artesanales y un lugar acogedor para compartir.">
+  <title>Café Raíces | Café colombiano y desayunos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Café Raíces, inicio">
+        <img class="brand__logo" src="images/logo.svg" alt="Ilustración de una taza de café">
+        <span class="brand__name">Café <strong>Raíces</strong></span>
+      </a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a class="site-nav__link site-nav__link--active" href="index.html">Inicio</a>
+        <a class="site-nav__link" href="pedidos.html">Menú y pedidos</a>
+        <a class="site-nav__link" href="#productos">Productos</a>
+        <a class="site-nav__link" href="#visitanos">Visítanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="eyebrow">CAFÉ COLOMBIANO · HECHO CON CARIÑO</p>
+        <h1>Un buen café puede cambiar tu día.</h1>
+        <p class="hero__text">En Café Raíces servimos café de origen, recetas artesanales y momentos para disfrutar sin afán.</p>
+        <div class="hero__actions">
+          <a class="button" href="pedidos.html#formulario">Haz tu pedido</a>
+          <a class="button button--outline" href="#productos">Explorar menú</a>
+        </div>
+        <p class="hero__note"><strong>Preparado al momento</strong> con ingredientes frescos y café colombiano.</p>
+      </div>
+      <div class="hero__image-wrap">
+        <img class="hero__image" src="images/cafe-hero.svg" alt="Ilustración de una taza de café junto a granos y hojas">
+        <span class="hero__stamp">De nuestra tierra<br><strong>a tu taza</strong></span>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="productos">
+      <div class="section__heading">
+        <p class="eyebrow">NUESTROS FAVORITOS</p>
+        <h2>Pequeños gustos, grandes momentos</h2>
+        <p>Opciones preparadas con cuidado para empezar el día o hacer una pausa.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img class="product-card__image" src="images/espresso.svg" alt="Ilustración de una taza de espresso">
+          <div class="product-card__body">
+            <p class="product-card__tag">CLÁSICO</p>
+            <h3>Espresso de origen</h3>
+            <p>Un café intenso, aromático y con notas de chocolate.</p>
+            <p class="product-card__price">$4.500 <span class="product-card__old-price"><s>$5.000</s></span></p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img class="product-card__image" src="images/latte.svg" alt="Ilustración de un café latte con arte en la espuma">
+          <div class="product-card__body">
+            <p class="product-card__tag">MÁS PEDIDO</p>
+            <h3>Latte artesanal</h3>
+            <p>Espresso con leche cremosa y un delicado toque de canela.</p>
+            <p class="product-card__price">$7.000</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img class="product-card__image" src="images/pan.svg" alt="Ilustración de pan artesanal recién horneado">
+          <div class="product-card__body">
+            <p class="product-card__tag">RECIÉN HORNEADO</p>
+            <h3>Pan de la casa</h3>
+            <p>Pan suave, horneado cada mañana y perfecto para acompañar.</p>
+            <p class="product-card__price">$3.500</p>
+          </div>
+        </article>
+      </div>
+      <p class="section__footnote">* Precios de ejemplo en pesos colombianos (COP). <em>Consulta disponibilidad al realizar tu pedido.</em></p>
+    </section>
+
+    <section class="section section--light" id="experiencia">
+      <div class="split">
+        <div>
+          <p class="eyebrow">UNA PAUSA QUE SE DISFRUTA</p>
+          <h2>Lo sencillo también puede ser especial.</h2>
+          <p>Somos una cafetería de barrio inspirada en los sabores de Colombia. Queremos que encuentres un espacio amable para conversar, estudiar o simplemente disfrutar tu bebida favorita.</p>
+          <ul class="feature-list">
+            <li>Café colombiano preparado al momento.</li>
+            <li>Alternativas dulces y saladas para acompañar.</li>
+            <li>Un ambiente tranquilo para compartir.</li>
+            <li>Pedidos para recoger sin largas esperas.</li>
+          </ul>
+          <a class="text-link" href="pedidos.html">Consulta el menú completo <span aria-hidden="true">→</span></a>
+        </div>
+        <aside class="tip-card">
+          <span class="tip-card__icon" aria-hidden="true">✦</span>
+          <h3>Un dato cafetero</h3>
+          <p>La altitud, el clima y el cuidado del cultivo aportan características únicas al café colombiano.</p>
+          <p class="tip-card__small">Nuestro consejo: disfruta el primer sorbo sin afán.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--green" id="opiniones">
+      <div class="section__heading">
+        <p class="eyebrow">LO QUE NOS CUENTAN</p>
+        <h2>La mejor parte es que vuelvas</h2>
+        <p>Estas opiniones son ejemplos de contenido para la maqueta del proyecto.</p>
+      </div>
+      <div class="quote-grid">
+        <article class="quote-card">
+          <div class="quote-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <blockquote>“El latte es delicioso y el lugar se siente tranquilo. Ideal para empezar la mañana.”</blockquote>
+          <p class="quote-card__author"><cite>— Valentina R.</cite></p>
+        </article>
+        <article class="quote-card">
+          <div class="quote-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <blockquote>“Me encanta que el pan esté fresco y que pueda pedir antes de pasar por él.”</blockquote>
+          <p class="quote-card__author"><cite>— Andrés M.</cite></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="visitanos">
+      <div class="section__heading">
+        <p class="eyebrow">TE ESPERAMOS</p>
+        <h2>Encuentra tu nuevo rincón favorito</h2>
+        <p>Dirección ficticia para fines académicos: Carrera 00 # 00-00, Medellín, Colombia.</p>
+      </div>
+      <div class="location-layout">
+        <div class="location-card">
+          <h3>Horario de atención</h3>
+          <ul class="hours-list">
+            <li><span>Lunes a viernes</span><strong>7:00 a. m. – 6:00 p. m.</strong></li>
+            <li><span>Sábados</span><strong>8:00 a. m. – 5:00 p. m.</strong></li>
+            <li><span>Domingos</span><strong>8:00 a. m. – 1:00 p. m.</strong></li>
+          </ul>
+          <p class="location-card__note">Los horarios son ilustrativos y deben confirmarse antes de publicar el sitio.</p>
+          <a class="button" href="pedidos.html#formulario">Contactar al negocio</a>
+        </div>
+        <div class="map-frame">
+          <iframe title="Mapa de referencia del centro de Medellín" src="https://www.openstreetmap.org/export/embed.html?bbox=-75.585%2C6.235%2C-75.555%2C6.255&amp;layer=mapnik" loading="lazy"></iframe>
+          <p><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Ver mapa en OpenStreetMap</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a class="brand brand--footer" href="index.html">
+        <img class="brand__logo" src="images/logo.svg" alt="">
+        <span class="brand__name">Café <strong>Raíces</strong></span>
+      </a>
+      <p>Café colombiano, conversaciones largas y momentos sencillos.</p>
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="pedidos.html">Menú y pedidos</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </nav>
+      <p class="site-footer__legal">Proyecto académico de HTML5 y CSS · Datos de contacto ficticios.</p>
+    </div>
+  </footer>
+</body>
+</html>

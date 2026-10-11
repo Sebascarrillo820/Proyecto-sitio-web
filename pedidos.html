@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta los precios de Café Raíces y envía una solicitud de pedido o contacto.">
+  <title>Menú y pedidos | Café Raíces</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Café Raíces, inicio">
+        <img class="brand__logo" src="images/logo.svg" alt="Ilustración de una taza de café">
+        <span class="brand__name">Café <strong>Raíces</strong></span>
+      </a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a class="site-nav__link" href="index.html">Inicio</a>
+        <a class="site-nav__link site-nav__link--active" href="pedidos.html">Menú y pedidos</a>
+        <a class="site-nav__link" href="index.html#productos">Productos</a>
+        <a class="site-nav__link" href="#formulario">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__content">
+        <p class="eyebrow">MENÚ · PRECIOS · PEDIDOS</p>
+        <h1>Tu próximo antojo está aquí.</h1>
+        <p>Revisa nuestras opciones y cuéntanos qué te gustaría pedir. Te responderemos para confirmar disponibilidad y hora de recogida.</p>
+        <a class="button" href="#formulario">Solicitar un pedido</a>
+      </div>
+      <img class="page-hero__image" src="images/cafe-hero.svg" alt="Taza ilustrada de café con hojas verdes">
+    </section>
+
+    <section class="section section--cream" id="precios">
+      <div class="section__heading">
+        <p class="eyebrow">MENÚ DE LA CASA</p>
+        <h2>Precios claros, sabor cercano</h2>
+        <p>Todos los valores son ejemplos académicos expresados en pesos colombianos.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="price-table">
+          <caption>Lista de precios de Café Raíces</caption>
+          <thead>
+            <tr><th scope="col">Categoría</th><th scope="col">Producto</th><th scope="col">Tamaño</th><th scope="col">Precio</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="rowgroup" rowspan="2">Bebidas</th><td>Espresso de origen</td><td>Pequeño</td><td>$4.500</td></tr>
+            <tr><td>Latte artesanal</td><td>Mediano</td><td>$7.000</td></tr>
+            <tr><th scope="rowgroup" rowspan="2">Panadería</th><td>Pan de la casa</td><td>Unidad</td><td>$3.500</td></tr>
+            <tr><td>Combo latte + pan</td><td>Combo</td><td>$9.500</td></tr>
+            <tr class="price-table__highlight"><td colspan="3"><strong>Promoción de la semana</strong> · Combo latte + pan</td><td><strong>$8.500</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">* El precio promocional es ilustrativo. Pregunta por las opciones disponibles antes de confirmar.</p>
+    </section>
+
+    <section class="section section--light" id="pasos">
+      <div class="split">
+        <div>
+          <p class="eyebrow">¿CÓMO PEDIR?</p>
+          <h2>En tres pasos, sin complicaciones</h2>
+          <ol class="steps-list">
+            <li>Revisa los productos y precios de esta página.</li>
+            <li>Completa el formulario con tu pedido y la hora aproximada.</li>
+            <li>Espera nuestra respuesta para confirmar disponibilidad.</li>
+          </ol>
+          <p>Si tienes una alergia o necesitas información sobre ingredientes, indícalo en el mensaje antes de realizar tu pedido.</p>
+        </div>
+        <aside class="tip-card tip-card--warm">
+          <span class="tip-card__icon" aria-hidden="true">☕</span>
+          <h3>¿Sabías que…?</h3>
+          <p>La palabra <abbr title="Organización Internacional del Café">OIC</abbr> significa Organización Internacional del Café, una entidad que trabaja con temas del sector cafetero.</p>
+          <p class="tip-card__small">¿Tienes dudas? Escríbenos en el formulario.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--green" id="formulario">
+      <div class="form-layout">
+        <div class="form-intro">
+          <p class="eyebrow">HABLEMOS</p>
+          <h2>Cuéntanos qué necesitas</h2>
+          <p>Completa los campos y deja los detalles de tu pedido. Los campos marcados con * son obligatorios.</p>
+          <p class="form-intro__detail"><strong>Respuesta:</strong> en el horario de atención.</p>
+          <p class="form-intro__detail"><strong>Recogida:</strong> se coordina después de confirmar el pedido.</p>
+        </div>
+        <form class="contact-form" action="mailto:pedidos@caferaices.example" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="nombre">Nombre completo *</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Ej. Laura Gómez" required>
+          </div>
+          <div class="form-field">
+            <label for="correo">Correo electrónico *</label>
+            <input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com" required>
+          </div>
+          <div class="form-field">
+            <label for="telefono">Teléfono de contacto</label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Ej. 300 000 0000">
+          </div>
+          <div class="form-field">
+            <label for="tipo">Tipo de solicitud *</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Selecciona una opción</option>
+              <option value="pedido">Realizar un pedido</option>
+              <option value="consulta">Consultar ingredientes o disponibilidad</option>
+              <option value="otro">Otra consulta</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="fecha">Día de recogida preferido</label>
+            <input id="fecha" name="fecha" type="date">
+          </div>
+          <div class="form-field">
+            <label for="mensaje">Tu pedido o mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe productos, cantidades y cualquier detalle importante…" required></textarea>
+          </div>
+          <label class="checkbox-field" for="acepto">
+            <input id="acepto" name="acepto" type="checkbox" required>
+            <span>Confirmo que los datos escritos son correctos.</span>
+          </label>
+          <button class="button contact-form__submit" type="submit">Enviar solicitud</button>
+          <p class="form-help">Nota académica: el formulario usa mailto como demostración. Para recibir pedidos de forma real, debe conectarse a un servicio o backend y reemplazar el correo de ejemplo.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a class="brand brand--footer" href="index.html">
+        <img class="brand__logo" src="images/logo.svg" alt="">
+        <span class="brand__name">Café <strong>Raíces</strong></span>
+      </a>
+      <p>Café colombiano, conversaciones largas y momentos sencillos.</p>
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="#precios">Ver precios</a>
+        <a href="#formulario">Contacto</a>
+      </nav>
+      <p class="site-footer__legal">Proyecto académico de HTML5 y CSS · Datos de contacto ficticios.</p>
+    </div>
+  </footer>
+</body>
+</html>
